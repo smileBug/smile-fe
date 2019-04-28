@@ -8,7 +8,6 @@ const Form = ({ onSubmit: propsSubmit, children }) => {
   useEffect(() => {
     if (children) {
       const arr = React.Children.toArray(children)
-      console.log(arr, 'arr')
       // 获取所以需要绑定的ItemDom
       let fieldItems = []
       arr.forEach(item => {
@@ -25,7 +24,6 @@ const Form = ({ onSubmit: propsSubmit, children }) => {
           }
         }
       })
-      console.log(fieldItems, 'fieldItems')
       // 获取整个models，收集item的props信息
       const newModels = {}
       fieldItems.forEach(item => {
@@ -39,7 +37,6 @@ const Form = ({ onSubmit: propsSubmit, children }) => {
   const changeModels = (name, value) => {
     setmodals({ ...models, [name]: {...models[name], value} })
   }
-  console.log(models, 'models')
   const onSubmit = () => {
     const values = {}
     for (const key in models) {
