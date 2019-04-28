@@ -13,11 +13,14 @@ module.exports = {
   },
   extends: ['airbnb', 'prettier'],
   rules: {
+    'import/no-unresolved': ['off'],
+    'react/prop-types': ['off'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js'] }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react-hooks/rules-of-hooks': 'error',
-    'consistent-return': ['off', { treatUndefinedAsUnspecified: false }]
+    'consistent-return': ['off', { treatUndefinedAsUnspecified: false }],
+    "no-restricted-syntax": ["error", "FunctionExpression", "WithStatement"]
   }
 }

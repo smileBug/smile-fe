@@ -1,5 +1,5 @@
 {
-  "name": "smile-webpack",
+  "name": "smile-fe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -52,6 +52,8 @@
     "cross-env": "^5.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.8.3"
+    "react-hot-loader": "^4.8.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0"
   }
 }

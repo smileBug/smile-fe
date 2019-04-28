@@ -6,7 +6,8 @@ module.exports = {
   resolve: {
     extensions: ['ts', 'tsx', '.js', '.jsx', '.json'],
     alias: {
-      hooks: path.resolve(__dirname, '../src/hooks')
+      hooks: path.resolve(__dirname, '../src/hooks'),
+      components: path.resolve(__dirname, '../src/components')
     }
   },
   module: {
