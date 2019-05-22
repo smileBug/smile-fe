@@ -21,6 +21,18 @@ module.exports = {
         test: /\.jsx?$/,
         include: path.resolve(__dirname, '../src'),
         use: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: { plugins: [require('autoprefixer')] } // eslint-disable-line global-require
+          }
+        ]
       }
     ]
   }
