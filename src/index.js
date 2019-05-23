@@ -6,6 +6,7 @@ import store from './store'
 import route from './router'
 
 const App = () => {
+  console.log(route, 'route')
   return <Provider {...store}>{route}</Provider>
 }
 

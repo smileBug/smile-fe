@@ -13,23 +13,7 @@ module.exports = merge(common, {
     publicPath: '/'
   },
   module: {
-    rules: [
-      // {
-      //   // antd样式处理
-      //   test: /\.css$/,
-      //   exclude: /src/,
-      //   use: ['style-loader', 'css-loader']
-      // },
-      {
-        test: /\.css$/,
-        // exclude: /node_modules/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.(png|jpg|jpeg|svg|gif)$/,
-        use: 'file-loader'
-      }
-    ]
+    rules: []
   },
   plugins: [
     new HtmlWebpackPlugin({
