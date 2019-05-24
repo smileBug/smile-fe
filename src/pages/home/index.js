@@ -6,7 +6,9 @@ const Home = () => {
     <div>
       <Link to="/test">test</Link>
       <br />
-      <Link to="/login">login</Link>
+      <span>登录</span>
+      <br />
+      <span>注册</span>
     </div>
   )
 }
