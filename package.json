@@ -52,7 +52,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "D": "^1.0.0",
     "antd": "^3.16.2",
     "cross-env": "^5.2.0",
     "react": "^16.8.6",

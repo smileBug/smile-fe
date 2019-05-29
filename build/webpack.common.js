@@ -13,7 +13,7 @@ module.exports = {
     // 通过splitChunks抽离的js文件名格式
     chunkFilename: '[name].[contentHash].chunk.js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: './'
   },
 
   module: {
